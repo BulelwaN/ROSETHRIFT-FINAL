@@ -89,15 +89,5 @@ The purpose of Rosethrift is to encourage sustainable fashion by allowing users 
 
 ---
 
-## Future Improvements
-
-* Product search and filters
-* Payment integration
-* Product reviews and ratings
-* Email notifications
-* Improved mobile responsiveness
-
----
-
 Languages Used: PHP, HTML, CSS, JavaScript and MySQL.
 
