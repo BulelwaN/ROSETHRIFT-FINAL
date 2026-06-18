@@ -1,0 +1,6 @@
+name|surname|username|email|phone|password|userType|status
+Lerato|Nxumalo|lerato_n|lerato@example.com|072 111 2233|482c811da5d5b4bc6d497ffa98491e38|buyer|Verified
+Tiisetso|Mokone|tiisetso_m|tiisetso@example.com|083 444 5566|482c811da5d5b4bc6d497ffa98491e38|seller|Verified
+Anele|Nkosi|anele_n|anele@example.com|061 777 8899|482c811da5d5b4bc6d497ffa98491e38|seller|Verified
+Thabiso|Morebodi|thabiso_m|thabiso@example.com|072 333 4455|482c811da5d5b4bc6d497ffa98491e38|buyer|Pending
+Nomvula|Dlamini|nomvula_d|nomvula@example.com|081 222 3344|482c811da5d5b4bc6d497ffa98491e38|buyer|Verified
