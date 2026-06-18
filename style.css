@@ -1,0 +1,371 @@
+/* =============================================
+   Rosethrift - Main Stylesheet
+   Colours: Red (#c0392b), White, Light Grey
+   ============================================= */
+
+/* Reset - removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER / NAVIGATION ===== */
+header {
+    background-color: white;
+    border-bottom: 3px solid #c0392b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.header-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo text */
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #c0392b;
+    text-decoration: none;
+}
+
+/* Nav links */
+nav a {
+    display: inline-block;
+    padding: 7px 15px;
+    margin-left: 4px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+/* Logout button - different style */
+.btn-logout {
+    background-color: #c0392b !important;
+    color: white !important;
+}
+
+/* Cart badge (number on cart icon) */
+.cart-badge {
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 7px;
+    font-size: 0.75rem;
+    margin-left: 3px;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* White box / card */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Page heading */
+.page-title {
+    font-size: 1.8rem;
+    color: #c0392b;
+    margin-bottom: 20px;
+}
+
+/* ===== ALERT MESSAGES ===== */
+.alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+}
+
+.alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.alert-error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+.alert-info    { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: inherit;
+    transition: background 0.2s;
+}
+
+.btn-red    { background: #c0392b; color: white; }
+.btn-red:hover { background: #e74c3c; }
+
+.btn-green  { background: #27ae60; color: white; }
+.btn-green:hover { background: #2ecc71; }
+
+.btn-blue   { background: #2980b9; color: white; }
+.btn-blue:hover { background: #3498db; }
+
+.btn-orange { background: #e67e22; color: white; }
+.btn-orange:hover { background: #f39c12; }
+
+.btn-grey   { background: #95a5a6; color: white; }
+.btn-grey:hover { background: #7f8c8d; }
+
+.btn-small  { padding: 5px 12px; font-size: 0.8rem; }
+
+/* ===== FORMS ===== */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: border 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #c0392b;
+    box-shadow: 0 0 0 3px rgba(192,57,43,0.12);
+}
+
+/* Two-column form layout */
+.form-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* ===== TABLES ===== */
+.table-box {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #c0392b;
+    color: white;
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+tr:hover td {
+    background: #fef9f9;
+}
+
+/* ===== ITEM CARDS (Shop Grid) ===== */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.item-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-card-info {
+    padding: 14px;
+}
+
+.item-card-info h4 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.item-price {
+    color: #c0392b;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.item-meta {
+    font-size: 0.82rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* ===== STATUS BADGES ===== */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge-green   { background: #d4edda; color: #155724; }
+.badge-yellow  { background: #fff3cd; color: #856404; }
+.badge-red     { background: #f8d7da; color: #721c24; }
+.badge-blue    { background: #d1ecf1; color: #0c5460; }
+
+/* ===== STATS BOXES (Admin Dashboard) ===== */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.stat-box .big-number {
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-box .label {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* ===== HERO BANNER (Homepage) ===== */
+.hero {
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    color: white;
+    border-radius: 12px;
+    padding: 55px 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* ===== CART TABLE ===== */
+.qty-input {
+    width: 60px;
+    padding: 5px 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c0392b;
+    padding: 12px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #2c3e50;
+    color: #ccc;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* ===== RESPONSIVE (Mobile friendly) ===== */
+@media (max-width: 768px) {
+    .header-box {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+    }
+    nav { margin-top: 8px; text-align: center; }
+    .form-two-col { grid-template-columns: 1fr; }
+    .stats-row { grid-template-columns: 1fr 1fr; }
+    .hero h1 { font-size: 1.8rem; }
+}
